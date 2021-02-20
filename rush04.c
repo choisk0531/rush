@@ -5,30 +5,14 @@ void rush04(int a, int b) {
 	int j = 1;
 	while(j<=b){
 		while(i<=a) {
-			if (j == 1) {
-				if (i == 1)
-					printf("A");
-				else if (i == a)
-					printf("C");
-				else
-					printf("B");
-			}
-			else if (j == b) {
-				if (i == 1)
-					printf("C");
-				else if (i == a)
-					printf("A");
-				else
-					printf("B");
-			}
-			else {
-				if (i == 1)
-					printf("B");
-				else if (i == a)
-					printf("B");
-				else
-					printf(" ");
-			}
+			if ((i == 1 && j == 1)|| (i==1 && j==b))
+				printf("A");
+			else if ((i == a && j == 1) || (i == a && j == b))
+				printf("C");
+			else if(i==1 || i==a || j==1 || j==b)
+				printf("B");
+			else
+				printf(" ");
 			i++;
 		}
 		i = 1;
