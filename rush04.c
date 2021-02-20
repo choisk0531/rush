@@ -1,8 +1,10 @@
 #include<stdio.h>
 void rush04(int a, int b) {
 	printf("\n");
-	for (int j = 1; j <= b; j++) {
-		for (int i = 1; i <= a; i++) {
+	int i = 1;
+	int j = 1;
+	while(j<=b){
+		while(i<=a) {
 			if (j == 1) {
 				if (i == 1)
 					printf("A");
@@ -27,8 +29,10 @@ void rush04(int a, int b) {
 				else
 					printf(" ");
 			}
+			i++;
 		}
-			printf("\n");
+		printf("\n");
+		j++;
 	}
 }
 int main() {
