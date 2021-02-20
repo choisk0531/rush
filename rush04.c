@@ -31,6 +31,7 @@ void rush04(int a, int b) {
 			}
 			i++;
 		}
+		i = 1;
 		printf("\n");
 		j++;
 	}
